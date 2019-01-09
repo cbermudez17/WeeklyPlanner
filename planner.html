@@ -106,7 +106,7 @@ Add new tables for new sections and features
 		
 		// This event handler handles edit button clicks inside modals
 		$('.edit-btn').on('click', function() {
-			var modal = $(this).closest('.modal');	$('.modal').find('button') or $('.modal button')
+			var modal = $(this).closest('.modal');
 			var taskID = $(modal).get(0).id.split('modal')[1];
 			var color = $(modal).find('.modal-header').get(0).className.split('bg-')[1].split(' ')[0];
 			var title = $(modal).find('.modal-title').text();
@@ -210,17 +210,17 @@ Add new tables for new sections and features
 		        removeBufferData();
 		    },
 		    success : function(taskID) {
-		        var modal = '<div class="modal fade" id="modal'+taskID+'">
-		                        <div class="modal-dialog modal-dialog-centered">
-		                            <div class="modal-content">
-		                                <div class="modal-header bg-'+color+' text-white">
-		                                    <h4 class="modal-title">'+title+'</h4>
-		                                    <button type="button" class="close text-white" data-dismiss="modal">&times;</button>
-		                                </div>
-		                                <div class="modal-body">'+description+'</div>
-		                            </div>
-		                        </div>
-		                    </div>';
+		        var modal = '<div class="modal fade" id="modal'+taskID+'">' +
+		                        '<div class="modal-dialog modal-dialog-centered">' +
+		                            '<div class="modal-content">' +
+		                                '<div class="modal-header bg-'+color+' text-white">' +
+		                                    '<h4 class="modal-title">'+title+'</h4>' +
+		                                    '<button type="button" class="close text-white" data-dismiss="modal">&times;</button>' +
+		                                '</div>' +
+		                                '<div class="modal-body">'+description+'</div>' +
+		                            '</div>' +
+		                        '</div>' +
+		                    '</div>';
 		        $('#'+day).append(modal);
 		        removeBufferData();
 		    }
