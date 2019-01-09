@@ -1,0 +1,43 @@
+@charset "ISO-8859-1";
+
+.bg-maroon      {background-color:#800000!important;}
+.bg-firebrick   {background-color:#B22222!important;}
+.bg-red         {background-color:#FF0000!important;}
+.bg-coral       {background-color:#FF7F50!important;}
+.bg-dark-salmon {background-color:#E9967A!important;}
+.bg-dark-orange {background-color:#FF8C00!important;}
+.bg-olive       {background-color:#808000!important;}
+.bg-yellow      {background-color:#FFFF00!important;color:#000000!important;}
+.bg-highlighter {background-color:#F0FF5E!important;color:#000000!important;}
+.bg-green       {background-color:#008000!important;}
+.bg-spring-green{background-color:#00FF7F!important;}
+.bg-aqua        {background-color:#66CDAA!important;}
+.bg-teal        {background-color:#008080!important;}
+.bg-cyan        {background-color:#00FFFF!important;color:#000000!important;}
+.bg-dodger-blue {background-color:#1E90FF!important;}
+.bg-blue        {background-color:#0000FF!important;}
+.bg-magenta     {background-color:#8B008B!important;}
+.bg-purple      {background-color:#800080!important;}
+.bg-pink        {background-color:#DB7093!important;}
+.bg-slate-gray  {background-color:#708090!important;}
+
+.text-maroon      {color:#800000!important;}
+.text-firebrick   {color:#B22222!important;}
+.text-red         {color:#FF0000!important;}
+.text-coral       {color:#FF7F50!important;}
+.text-dark-salmon {color:#E9967A!important;}
+.text-dark-orange {color:#FF8C00!important;}
+.text-olive       {color:#808000!important;}
+.text-yellow      {color:#FFFF00!important;}
+.text-highlighter {color:#F0FF5E!important;}
+.text-green       {color:#008000!important;}
+.text-spring-green{color:#00FF7F!important;}
+.text-aqua        {color:#66CDAA!important;}
+.text-teal        {color:#008080!important;}
+.text-cyan        {color:#00FFFF!important;}
+.text-dodger-blue {color:#1E90FF!important;}
+.text-blue        {color:#0000FF!important;}
+.text-magenta     {color:#8B008B!important;}
+.text-purple      {color:#800080!important;}
+.text-pink        {color:#DB7093!important;}
+.text-slate-gray  {color:#708090!important;}

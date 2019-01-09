@@ -1,0 +1,47 @@
+@charset "ISO-8859-1";
+
+@font-face {
+	font-family: tomato-soup;
+	src: url(../fonts/TomatoSoup-Regular.ttf);
+}
+
+@font-face {
+	font-family: bebas-neue-bold;
+	src: url(../fonts/BebasNeue-Bold.ttf);
+}
+
+@font-face {
+	font-family: bebas-neue-book;
+	src: url(../fonts/BebasNeue-Book.ttf);
+}
+
+body * {
+	font-family: bebas-neue-bold;
+}
+
+/* h1, h2, h3, h4, h5, h6 { */
+/* 	font-family: bebas-neue-bold; */
+/* } */
+
+
+h2 {
+	font-family: tomato-soup;
+	font-weight: bold;
+	font-size: 6em;
+}
+
+.card {
+	margin-bottom: 5px;
+}
+
+h3 {
+	margin-top: 10px;
+}
+
+.line-through {
+	text-decoration: line-through;
+}
+
+.urgent {
+	color: red;
+}
