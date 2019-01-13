@@ -45,3 +45,7 @@ h3 {
 .urgent {
 	color: red;
 }
+
+#tuesday, #thursday, #saturday {
+	background-color: #F7F7F7!important;
+}
