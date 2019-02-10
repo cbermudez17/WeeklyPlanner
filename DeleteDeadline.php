@@ -9,8 +9,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         die("Connection failed: " . $conn->connect_error);
     }
     
-    $stmt = $conn->prepare("DELETE FROM tasks WHERE taskID=?");
-    $stmt->bind_param("i", $_POST["taskID"]);
+    $stmt = $conn->prepare("DELETE FROM deadlines WHERE deadlineID=?");
+    $stmt->bind_param("i", $_POST["deadlineID"]);
     
     $stmt->execute();
     

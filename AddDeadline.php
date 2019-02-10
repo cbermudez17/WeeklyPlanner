@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     
     require 'ODBC.php';
@@ -9,10 +9,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         die("Connection failed: " . $conn->connect_error);
     }
     
-    $stmt = $conn->prepare("DELETE FROM tasks WHERE taskID=?");
-    $stmt->bind_param("i", $_POST["taskID"]);
+    $stmt = $conn->prepare("INSERT INTO deadlines(`userID`, `description`, `dueDate`, `alertSent`) VALUES (?, ?, ?, 0)");   
+    $stmt->bind_param("iss", $_SESSION["userID"], $_POST["text"], $_POST["date"]);
     
     $stmt->execute();
+    
+    $id = $conn->insert_id;
+    echo $id;
     
     $stmt->close();
     $conn->close();

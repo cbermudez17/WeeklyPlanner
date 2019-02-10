@@ -1,17 +1,16 @@
 <?php
-
+session_start();
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     
-    $conn = new mysqli("sql2.njit.edu", "cb283", "tJ8YOsDYk", "cb283");
+    require 'ODBC.php';
+    $conn = new mysqli($url, $user, $pass, $db);
     
     if ($conn->connect_error) {
         die("Connection failed: " . $conn->connect_error);
     }
     
-    $task = json_decode($_POST["task"], false);
-    
-    $stmt = $conn->prepare("INSERT INTO tasks(`title`, `details`, `time`, `day`, `color`) VALUES (?, ?, ?, ?, ?)");   
-    $stmt->bind_param("sssss", $task->title, $task->details, $task->time, $task->day, $task->color);
+    $stmt = $conn->prepare("INSERT INTO tasks(`userID`, `title`, `details`, `time`, `day`, `color`) VALUES (?, ?, ?, ?, ?, ?)");   
+    $stmt->bind_param("isssss", $_SESSION["userID"], $_POST["title"], $_POST["details"], $_POST["time"], $_POST["day"], $_POST["color"]);
     
     $stmt->execute();
     

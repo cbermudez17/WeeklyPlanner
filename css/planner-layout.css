@@ -5,18 +5,8 @@
 	src: url(../fonts/TomatoSoup-Regular.ttf);
 }
 
-@font-face {
-	font-family: bebas-neue-bold;
-	src: url(../fonts/BebasNeue-Bold.ttf);
-}
-
-@font-face {
-	font-family: bebas-neue-book;
-	src: url(../fonts/BebasNeue-Book.ttf);
-}
-
 body * {
-	font-family: bebas-neue-bold;
+	font-family: "Didact Gothic";
 }
 
 h2 {
@@ -28,7 +18,7 @@ h2 {
 .card {
 	margin-bottom: 10px;
 	cursor: pointer;
-	min-width: 150px;
+	min-width: 140px;
 }
 
 h3 {
@@ -39,7 +29,7 @@ h3 {
 	text-decoration: line-through;
 }
 
-li.urgent > span > span, li.urgent .fa-exclamation-circle {
+div.urgent span, div.urgent .fa-exclamation-circle {
 	color: red;
 }
 
@@ -49,4 +39,23 @@ li.urgent > span > span, li.urgent .fa-exclamation-circle {
 
 #water-message, .class-btn-group:not(:first-of-type) {
 	display: none;
+}
+
+.nav-tabs {
+	font-weight: bold;
+}
+
+.row-action {
+	color: #495057;
+}
+
+.row-action:focus, .row-action:hover {
+	color: #495057;
+	text-decoration: none;
+	background-color: #f8f9fa;
+}
+
+.row-action:active {
+	color: #212529;
+	background-color: #e9ecef;
 }
