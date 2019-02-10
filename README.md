@@ -7,5 +7,6 @@ Features include:
   - Deadlines which provide email alerts when they are approaching
   - Course hub which provides a central point for information relevant to each course
   - List of important links
+  - Weather ticker for the week
 
 Live Demo: https://cbermudez17.github.io/WeeklyPlanner/planner.html
