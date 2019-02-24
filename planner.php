@@ -489,10 +489,14 @@ h4 {
 				if (nextWeek >= Date.parse(deadlineDate)) { // Check if deadline is within a week away
 					if (Date.parse(deadlineDate) == Date.parse(tomorrow)) { // Check if the deadline is tomorrow
 						deadlinesTomorrow.push($(this).closest('.row').get(0).id.split('deadline')[1]);
+						$(this).closest('.row').find('.text-left').addClass('text-danger');	// Deadline is due tommorow, make red
 					} else {
 						deadlinesWeek.push($(this).closest('.row').get(0).id.split('deadline')[1]);
+						$(this).closest('.row').find('.text-left').addClass('text-dark-orange');	// Deadline is within a week, make orange
 					}
 				}
+			} else {
+				$(this).closest('.row').find('.text-left').addClass('text-danger');	// Deadline is past due date, make red
 			}
 		});
 		if (deadlinesWeek.length + deadlinesTomorrow.length > 0) {
